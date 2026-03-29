@@ -1,0 +1,627 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background: #fff;
+}
+
+.logo img {
+    height: 60px;
+}
+
+/* Navigation Links */
+
+.navlink {
+    display: flex;
+    gap: 40px;
+}
+
+.navlink a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    font-family: 'oswald';
+    transition: 0.3s;
+}
+
+.navlink a:hover {
+    color: orange;
+}
+
+.active {
+    color: orange;
+}
+
+/* Button */
+
+.consult-btn {
+    padding: 12px 22px;
+    border-radius: 30px;
+    border: none;
+    background: orange;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* hero */
+
+.about-hero{
+    height:400px;
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('/construction/assets/images/rotatingimage.png') center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    color:orange;
+    font-size:45px;
+}
+
+.hero-content p{
+    margin-top:10px;
+}
+
+/* stats */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:-50px;
+}
+
+.stat-box{
+    background:white;
+    padding:25px 40px;
+    border-radius:15px;
+    box-shadow:0 4px 10px gray;
+    text-align:center;
+}
+
+.stat-box h2{
+    color:orange;
+}
+
+/* STORY SECTION */
+
+.story {
+    padding: 60px 80px;
+    background: #f5f5f5;
+}
+
+.story-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Left Text */
+
+.story-text {
+    width: 50%;
+}
+
+.story-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    line-height: 28px;
+    color: #555;
+}
+
+/* Right Images */
+
+.story-images {
+    display: flex;
+    gap: 20px;
+    width: 70%;
+}
+
+.story-images img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+/* mission vision */
+
+.mission-vision{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:40px;
+    padding:30px;
+    width:100%;
+    
+}
+
+.mission{
+    background:#0d1b3d;
+    color:white;
+    padding:40px;
+    border-radius:15px;
+}
+
+.vision{
+    background:orange;
+    color:white;
+    padding:40px;
+    border-radius:15px;
+}
+
+/* values */
+
+.values{
+    text-align:center;
+    padding:60px;
+}
+
+.value-container{
+    display:flex;
+    gap:30px;
+    margin-top:40px;
+}
+
+.value-box{
+    background:#f4f4f4;
+    padding:30px;
+    border-radius:15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.value-box i {
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect */
+
+.value-box:hover {
+    background: orange;
+    color: white;
+    transform: translateY(-8px);
+}
+
+.value-box:hover i {
+    color: white;
+}
+
+
+/* team */
+
+.team{
+    text-align:center;
+    padding:40px;
+}
+
+.team-container{
+    display:flex;
+    gap:40px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.member {
+    text-align: center;
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.member:hover {
+    background: #f4f4f4;
+    transform: translateY(-8px);
+}
+
+.member:hover img {
+    transform: scale(1.05);
+}
+/*Consultation*/
+
+/* BACKGROUND IMAGE */
+.consultation-section {
+    background: url('/construction/assets/images/vrbg.png') center/cover no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* overlay */
+.consultation-overlay {
+    background: rgba(10, 20, 40, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* content */
+.consultation-content {
+    text-align: center;
+    color: white;
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* heading */
+.consultation-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4;
+    font-family: 'oswald';
+}
+
+.consultation-content span {
+    color: #ffb400;
+}
+
+/* paragraph */
+.consultation-content p {
+    margin: 20px 0;
+    color: #ddd;
+    line-height: 1.6;
+    font-family: 'inter';
+}
+
+/* button */
+.consultation-btn {
+    background: #ffb400;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.consultation-btn:hover {
+    background: #ffa000;
+}
+
+/* unordered list */
+.consultation-features {
+    list-style: disc;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    color: #ddd;
+}
+
+
+/*footer section*/
+
+.footer {
+    background:  #071a3d;
+    padding: 60px 80px;
+    color: white;
+    margin-top: 50px;
+    width:100%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #cbd3e1;
+    line-height: 1.7;
+}
+
+.footer-box h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* lists */
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 12px;
+    color: #cbd3e1;
+}
+
+/* contact icons */
+.contact li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact i {
+    color: #ffb400;
+    font-size: 18px;
+}
+
+/*tablet*/
+
+@media (max-width:768px){
+
+/* navbar */
+.navbar{
+    padding:15px 30px;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.navlink{
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.consult-btn{
+    padding:10px 18px;
+}
+
+/* hero */
+.hero-content h1{
+    font-size:32px;
+}
+
+/* stats */
+.stats{
+    flex-wrap:wrap;
+    margin-top:-30px;
+}
+
+.stat-box{
+    padding:20px 30px;
+}
+
+/* story */
+.story{
+    padding:40px;
+}
+
+.story-container{
+    flex-direction:column;
+}
+
+.story-text{
+    width:100%;
+}
+
+.story-images{
+    width:100%;
+    justify-content:center;
+}
+
+.story-images img{
+    width:45%;
+}
+
+/* mission vision */
+.mission-vision{
+    flex-direction:column;
+}
+
+.mission,
+.vision{
+    width:100%;
+}
+
+/* values */
+.value-container{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.value-box{
+    width:45%;
+}
+
+/* team */
+.team-container{
+    flex-wrap:wrap;
+}
+
+.member img{
+    width:160px;
+    height:160px;
+}
+
+/* consultation */
+.consultation-section{
+    height:auto;
+    padding:40px 20px;
+}
+
+.consultation-content h2{
+    font-size:30px;
+}
+
+.consultation-features{
+    flex-direction:column;
+    gap:10px;
+}
+
+/* footer */
+.footer{
+    padding:40px;
+}
+
+.footer-container{
+    justify-content:center;
+    text-align:center;
+}
+
+}
+
+/*mobile*/
+
+@media (max-width:330px){
+
+/* navbar */
+.navbar{
+    flex-direction:column;
+    padding:15px;
+    text-align:center;
+}
+
+.logo img{
+    height:50px;
+}
+
+.navlink{
+    flex-direction:column;
+    gap:10px;
+}
+
+.consult-btn{
+    width:100%;
+}
+
+/* hero */
+.about-hero{
+    height:auto;
+    padding:30px 15px;
+}
+
+.hero-content h1{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:13px;
+}
+
+/* stats */
+.stats{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.stat-box{
+    width:90%;
+    margin:auto;
+}
+
+/* story */
+.story{
+    padding:30px 15px;
+}
+
+.story-images{
+    flex-direction:column;
+}
+
+.story-images img{
+    width:100%;
+}
+
+/* mission vision */
+.mission,
+.vision{
+    padding:25px;
+}
+
+/* values */
+.values{
+    padding:30px 15px;
+}
+
+.value-container{
+    flex-direction:column;
+}
+
+.value-box{
+    width:100%;
+}
+
+/* team */
+.team-container{
+    flex-direction:column;
+}
+
+.member img{
+    width:140px;
+    height:140px;
+}
+
+/* consultation */
+.consultation-content h2{
+    font-size:22px;
+}
+
+.consultation-content p{
+    font-size:13px;
+}
+
+.consultation-btn{
+    width:100%;
+}
+
+.consultation-features{
+    flex-direction:column;
+    gap:8px;
+    font-size:13px;
+}
+
+/* footer */
+.footer{
+    padding:30px 20px;
+}
+
+.footer-container{
+    flex-direction:column;
+}
+
+.footer-logo{
+    margin:auto;
+}
+
+}
+
